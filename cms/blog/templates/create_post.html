@@ -1,0 +1,17 @@
+{% extends 'base.html' %} {% block body %}
+
+<div class="container">
+    <h3>Create New Post </h3>
+    <hr>
+    <form action="/create/" method="POST">
+        {% csrf_token %}
+        <p>Title </p>
+        <input type="text" class="form-control" name="title">
+        <br>
+        <p>Content </p>
+        <textarea class="form-control" name="content"> </textarea>
+        <br>
+        <button type="submit" class="btn btn-success">Create Post </button>
+    </form>
+</div>
+{% endblock %}

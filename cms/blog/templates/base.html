@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Seeker Musings</title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/cyborg/bootstrap.min.css" </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+
+            <div class="container">
+                <a class="navbar-brand" href="#">Seeker Musings</a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav" ml-auto>
+                        <a class="nav-item nav-link" href="/">Home</a>
+                        <a class="nav-item nav-link" href="/allposts/">All Posts</a>
+                        <a class="nav-item nav-link" href="/create/">Create New Post</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </body>
+    <br><br> {% block body %} {% endblock %}
+
+</html>

@@ -1,0 +1,10 @@
+{% extends 'base.html' %} {% block body %}
+
+<a href="/allposts/">Back to Blog Catalog</a>
+<h1>{{selected_post.title}} </h1>
+<a class='btn btn-md btn-primary' href="/edit/{{selected_post.id}}/">Edit</a>
+<a class='btn btn-md btn-danger' href="/delete/{{selected_post.id}}/">Delete</a>
+<p>Published {{selected_post.created}} </p>
+<hr>
+<p> {{selected_post.content}} </p>
+{% endblock %}
